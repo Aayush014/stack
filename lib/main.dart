@@ -40,8 +40,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100,
                         top: 10,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.purple,
                             borderRadius: BorderRadius.circular(20),
@@ -69,8 +69,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100 / 2.5,
                         top: 80,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(20),
@@ -98,8 +98,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100 * 1.7,
                         top: 80,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
                             borderRadius: BorderRadius.circular(20),
@@ -127,8 +127,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100,
                         top: 155,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.green,
                             borderRadius: BorderRadius.circular(20),
@@ -156,8 +156,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100 / 2.5,
                         top: 230,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.amber,
                             borderRadius: BorderRadius.circular(20),
@@ -185,8 +185,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100 * 1.7,
                         top: 230,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(20),
@@ -214,8 +214,8 @@ class _MyAppState extends State<MyApp> {
                         left: 100,
                         top: 305,
                         child: Container(
-                          height: 145,
-                          width: 145,
+                          height: 160,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(20),
@@ -247,7 +247,7 @@ class _MyAppState extends State<MyApp> {
                   width: double.infinity,
                 ),
           floatingActionButton: SizedBox(
-            width: 300,
+            width: 390,
             height: 200,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -255,8 +255,12 @@ class _MyAppState extends State<MyApp> {
                 FloatingActionButton(
                   backgroundColor: Colors.black,
                   child: (n2 = !n2)
-                      ? const Icon(Icons.remove_red_eye,color: Colors.white,)
-                      : const Icon(CupertinoIcons.eye_slash,color: Colors.white),
+                      ? const Icon(
+                          Icons.remove_red_eye,
+                          color: Colors.white,
+                        )
+                      : const Icon(CupertinoIcons.eye_slash,
+                          color: Colors.white),
                   onPressed: () {
                     setState(() {
                       n1 == !n1;
@@ -273,5 +277,5 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-bool n1 = false;
+bool n1 = true;
 bool n2 = true;
